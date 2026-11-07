@@ -1,0 +1,195 @@
+
+/* Pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #6b2638;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Navigation */
+nav {
+    background-color: #4d1c2a;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e8c7a8;
+}
+
+/* Main */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 75px 20px;
+    background-color: #eaded2;
+    border-radius: 15px;
+    margin-bottom: 35px;
+}
+
+.hero h2 {
+    color: #6b2638;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #6b2638;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.button:hover {
+    background-color: #4d1c2a;
+}
+
+/* About */
+#about,
+#members,
+#contact {
+    padding: 45px 10px;
+    text-align: center;
+}
+
+#about h2,
+#members h2,
+#contact h2 {
+    color: #6b2638;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+#about p {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* Member Cards */
+.member-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.member-card {
+    background-color: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-8px);
+}
+
+.member-card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.member-card h3 {
+    color: #6b2638;
+    margin-bottom: 10px;
+}
+
+.member-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Contact */
+#contact {
+    background-color: #eaded2;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #4d1c2a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .member-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
